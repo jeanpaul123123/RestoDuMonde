@@ -17,10 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="3dn-IX-TcA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-Jf-vB9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5fO-HI-WwH">
+                                    <size key="itemSize" width="130" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCell" id="rb6-G1-Vr4" customClass="MenuCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pxq-Jf-vB9" firstAttribute="trailing" secondItem="9mD-Eu-6Mi" secondAttribute="trailing" id="khp-NX-LKI"/>
+                            <constraint firstItem="pxq-Jf-vB9" firstAttribute="leading" secondItem="9mD-Eu-6Mi" secondAttribute="leading" id="ljg-0r-5LM"/>
+                            <constraint firstItem="pxq-Jf-vB9" firstAttribute="top" secondItem="9mD-Eu-6Mi" secondAttribute="top" id="mj8-0a-yo3"/>
+                            <constraint firstItem="pxq-Jf-vB9" firstAttribute="bottom" secondItem="9mD-Eu-6Mi" secondAttribute="bottom" id="zEW-yh-Jud"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9mD-Eu-6Mi"/>
                     </view>
                     <navigationItem key="navigationItem" id="I01-I8-3RO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="pxq-Jf-vB9" id="8WW-U6-RIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acj-40-ApP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +78,7 @@
         <!--Menu-->
         <scene sceneID="I6h-8q-aLM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F11-dv-LdP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F11-dv-LdP" customClass="MonNav" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" id="oPZ-I9-bxD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2KY-TU-cep">
@@ -95,7 +126,7 @@
         <!--A la carte-->
         <scene sceneID="Tfg-UW-RXl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vY2-ie-Zv7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vY2-ie-Zv7" customClass="MonNav" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="A la carte" id="Hg8-pf-hNH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OTt-og-vBS">
