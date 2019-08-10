@@ -26,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="-284.05797101449275" y="-564.50892857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Mon Tab Bar-->
         <scene sceneID="0K9-Em-9cR">
             <objects>
-                <tabBarController id="1FR-Yt-LJP" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="huS-Bj-hTm">
+                <tabBarController id="1FR-Yt-LJP" customClass="MonTabBar" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="huS-Bj-hTm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,11 +44,11 @@
             </objects>
             <point key="canvasLocation" x="-2109" y="-237"/>
         </scene>
-        <!--Item 1-->
+        <!--Menu-->
         <scene sceneID="9gT-3H-oBh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hfm-V2-oF9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="com-dy-bD5"/>
+                    <tabBarItem key="tabBarItem" title="Menu" id="com-dy-bD5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2fC-qw-9Vx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -92,11 +92,11 @@
             </objects>
             <point key="canvasLocation" x="-284" y="114"/>
         </scene>
-        <!--Item-->
+        <!--A la carte-->
         <scene sceneID="QGz-xs-UAf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4e-mj-9DI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cyp-ZM-7zS"/>
+                    <tabBarItem key="tabBarItem" title="A la carte" id="cyp-ZM-7zS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ysl-lf-e9d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
