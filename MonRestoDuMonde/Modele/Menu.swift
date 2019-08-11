@@ -29,7 +29,9 @@ class Menu {
     init(pays: String, image: UIImage) {
         self._pays = pays
         self._image = image
-        self._plats = [Plat]()
+        // avant la fonction ajouterPlatAuMenu
+        //self._plats = [Plat]()
+        self._plats = LesPlats.obtenir.ajouterPlatAuMenu(pays: self._pays)
     }
     
 }

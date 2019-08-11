@@ -15,6 +15,13 @@ class ALaCarteController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // afin que chaque cellule soit de la bonne taille surtout (et dégradé en plus)
+        let vue = UIView(frame: tableView.bounds)
+        vue.layer.addSublayer(Degrade())
+        tableView.backgroundView = vue
+        
+        tousLesPlats = LesPlats.obtenir.carteComplete()
         title = "A la carte"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -48,6 +55,22 @@ class ALaCarteController: UITableViewController {
         // Configure the cell...
 
         //return cell
+    }
+    
+    // hauteur de chaque ligne de la table : 110 car l'image fait 100 en hauteur
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
+    // fonction qui ajuste le titleForHeaderInSection
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let typeDePlat = tousLesPlats[section].type
+        
+        switch typeDePlat {
+        case .entree: return "Nos entrées"
+        case.platPrincipal: return "Nos plats principaux"
+        case .dessert: return "Le coin des gourmands"
+        }
     }
     
     

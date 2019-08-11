@@ -12,6 +12,7 @@ class PlatCell: UITableViewCell {
 
     @IBOutlet weak var imageDuPlat: UIImageView!
     
+
     @IBOutlet weak var descDuPlat: UILabel!
     
     var plat: Plat!
