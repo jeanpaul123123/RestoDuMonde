@@ -15,6 +15,8 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
     
     let cellID = "MenuCell"
     
+    var menus = [Menu]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,17 +24,34 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        // utilisaiton de la fonction static obtenir pour ramener tous les menus
+        // permet en fait de ne pas utiliser new et la fonction Menus ... plus simple
+        menus = LesPlats.obtenir.lesMenus()
+        
+        // pour recharger les données si c'est un peu long .. .on fait
+        // reloadData will discard any uncommitted updates :
+        // se débarassera de toutes mises à jour non faîtes = assure la mise à jour
+        collectionView.reloadData()
+        
+        
 
     }
     // différence avec la table view : ici on a numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return menus.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // voyant cela on va créer une classe héritant de UICollectionView
+        
+        // on va parcourir tous les items (et non les rows comme pour une table view)
+        // c'est cela qui va faire une boucle pour tous les items
+        let menu = menus[indexPath.item]
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? MenuCell {
-            cell.backgroundColor = GRIS_TRES_FONCE
+            // Solution avant de ramener la cellulle
+            //cell.backgroundColor = GRIS_TRES_FONCE
+            cell.miseEnPlace(menu: menu)
             return cell
         }
         return UICollectionViewCell()
