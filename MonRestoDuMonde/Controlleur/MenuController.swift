@@ -18,7 +18,7 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Les menus du monde"
+        title = "Les menus du monde" // c'est dans le navigation controller (MonNav) que l'on définie la police
         
         collectionView.delegate = self
         collectionView.dataSource = self

@@ -79,7 +79,9 @@
         <scene sceneID="I6h-8q-aLM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F11-dv-LdP" customClass="MonNav" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Menu" id="oPZ-I9-bxD"/>
+                    <tabBarItem key="tabBarItem" title="Menu" id="oPZ-I9-bxD">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2KY-TU-cep">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -127,7 +129,9 @@
         <scene sceneID="Tfg-UW-RXl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vY2-ie-Zv7" customClass="MonNav" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="A la carte" id="Hg8-pf-hNH"/>
+                    <tabBarItem key="tabBarItem" title="A la carte" id="Hg8-pf-hNH">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OTt-og-vBS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

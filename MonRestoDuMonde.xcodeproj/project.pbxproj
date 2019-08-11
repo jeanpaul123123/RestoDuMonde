@@ -13,6 +13,8 @@
 		4B58AEEA22FED603002C4488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B58AEE822FED603002C4488 /* LaunchScreen.storyboard */; };
 		4B58AEF522FEDB9F002C4488 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58AEF422FEDB9F002C4488 /* MenuController.swift */; };
 		4B58AEF722FEDC51002C4488 /* ALaCarteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58AEF622FEDC51002C4488 /* ALaCarteController.swift */; };
+		4B6C51832300068B00D545AC /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C51822300068B00D545AC /* Plat.swift */; };
+		4B6C51852300077700D545AC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C51842300077700D545AC /* Enums.swift */; };
 		4B720C3C22FF4C6900DA976B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B720C3B22FF4C6900DA976B /* MenuCell.swift */; };
 		4BC64FFD22FEF04C00F515B1 /* MonTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC64FFC22FEF04C00F515B1 /* MonTabBar.swift */; };
 		4BC6500022FEF11400F515B1 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC64FFF22FEF11400F515B1 /* Constantes.swift */; };
@@ -28,6 +30,8 @@
 		4B58AEEB22FED603002C4488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B58AEF422FEDB9F002C4488 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		4B58AEF622FEDC51002C4488 /* ALaCarteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarteController.swift; sourceTree = "<group>"; };
+		4B6C51822300068B00D545AC /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
+		4B6C51842300077700D545AC /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		4B720C3B22FF4C6900DA976B /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		4BC64FFC22FEF04C00F515B1 /* MonTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonTabBar.swift; sourceTree = "<group>"; };
 		4BC64FFF22FEF11400F515B1 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		4B58AEF122FEDA12002C4488 /* Modele */ = {
 			isa = PBXGroup;
 			children = (
+				4B6C51822300068B00D545AC /* Plat.swift */,
+				4B6C51842300077700D545AC /* Enums.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				4BC6500222FEF5CC00F515B1 /* MonNav.swift in Sources */,
 				4B58AEF522FEDB9F002C4488 /* MenuController.swift in Sources */,
 				4B58AEE022FED602002C4488 /* AppDelegate.swift in Sources */,
+				4B6C51832300068B00D545AC /* Plat.swift in Sources */,
+				4B6C51852300077700D545AC /* Enums.swift in Sources */,
 				4B58AEF722FEDC51002C4488 /* ALaCarteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

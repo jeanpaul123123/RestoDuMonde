@@ -17,7 +17,7 @@ class MonNav: UINavigationController {
         // item de la tab bar en bas
         navigationBar.tintColor = GRIS_TRES_CLAIR
         navigationBar.titleTextAttributes = [.font: FONT_DE_BASE,.foregroundColor: GRIS_TRES_CLAIR]
-
+        
     }
     
 
