@@ -25,6 +25,13 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        // mise en place du gradient
+        
+        let vue = UIView(frame: collectionView.bounds)
+        vue.layer.addSublayer(Degrade())
+        // Avant d'aboutir à cette instruction, on a crée une classe qui a la méthode Degrade
+        collectionView.backgroundView = vue
+        
         // utilisaiton de la fonction static obtenir pour ramener tous les menus
         // permet en fait de ne pas utiliser new et la fonction Menus ... plus simple
         menus = LesPlats.obtenir.lesMenus()
