@@ -15,6 +15,9 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
     
     let cellID = "MenuCell"
     
+    // #clicmenu
+    let segueID = "VersDetail"
+    
     var menus = [Menu]()
     
     override func viewDidLoad() {
@@ -77,5 +80,22 @@ class MenuController:  UIViewController,UICollectionViewDelegate,UICollectionVie
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
+    
+    // #clicmenu
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let menu = menus[indexPath.item]
+        performSegue(withIdentifier: segueID, sender: menu)
+        
+    }
+    
+    // #clicmenu
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let detail = segue.destination as? DetailController {
+                detail.menu = sender as? Menu
+            }
+        }
+    }
+    
 
 }

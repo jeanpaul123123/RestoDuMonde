@@ -94,11 +94,41 @@
                     <navigationItem key="navigationItem" id="I01-I8-3RO"/>
                     <connections>
                         <outlet property="collectionView" destination="pxq-Jf-vB9" id="8WW-U6-RIa"/>
+                        <segue destination="Srx-rc-dWT" kind="show" identifier="VersDetail" id="fW3-hZ-5RW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acj-40-ApP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="-666.29464285714278"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="VMy-yP-n5B">
+            <objects>
+                <viewController id="Srx-rc-dWT" customClass="DetailController" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IwO-aQ-Sjo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbu-Bg-m53">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qbu-Bg-m53" firstAttribute="top" secondItem="K7R-jg-MRi" secondAttribute="top" id="3xR-ol-jLO"/>
+                            <constraint firstItem="qbu-Bg-m53" firstAttribute="trailing" secondItem="K7R-jg-MRi" secondAttribute="trailing" id="bRE-WB-1d5"/>
+                            <constraint firstItem="qbu-Bg-m53" firstAttribute="leading" secondItem="K7R-jg-MRi" secondAttribute="leading" id="mUv-wl-PAX"/>
+                            <constraint firstItem="qbu-Bg-m53" firstAttribute="bottom" secondItem="K7R-jg-MRi" secondAttribute="bottom" id="wO4-xU-DqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K7R-jg-MRi"/>
+                    </view>
+                    <connections>
+                        <outlet property="scroll" destination="qbu-Bg-m53" id="GWt-fL-GVN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECj-BO-odF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="-666.29464285714278"/>
         </scene>
         <!--Mon Tab Bar-->
         <scene sceneID="220-Gb-Qyc">
@@ -151,7 +181,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlatCell" rowHeight="128" id="1B8-eA-vCu" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1B8-eA-vCu" id="v1f-Gl-Xxz" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1B8-eA-vCu" id="v1f-Gl-Xxz" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -163,8 +193,9 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d5r-NU-2cn">
-                                            <rect key="frame" x="146" y="14" width="263" height="100"/>
+                                            <rect key="frame" x="143" y="14" width="241" height="100"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="241" id="sFR-Rx-8wu"/>
                                                 <constraint firstAttribute="height" constant="100" id="yvo-wK-onf"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -174,8 +205,8 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="d5r-NU-2cn" firstAttribute="leading" secondItem="qkJ-pd-QEw" secondAttribute="trailing" constant="8" id="7he-zU-yqd"/>
-                                        <constraint firstAttribute="trailing" secondItem="d5r-NU-2cn" secondAttribute="trailing" constant="5" id="kme-ND-4Wu"/>
+                                        <constraint firstAttribute="trailing" secondItem="d5r-NU-2cn" secondAttribute="trailing" constant="5" id="QT3-O9-vyw"/>
+                                        <constraint firstItem="d5r-NU-2cn" firstAttribute="leading" secondItem="qkJ-pd-QEw" secondAttribute="trailing" constant="5" id="ftg-jS-Z08"/>
                                         <constraint firstItem="qkJ-pd-QEw" firstAttribute="leading" secondItem="v1f-Gl-Xxz" secondAttribute="leading" constant="10" id="rvi-iH-sYp"/>
                                         <constraint firstItem="qkJ-pd-QEw" firstAttribute="centerY" secondItem="v1f-Gl-Xxz" secondAttribute="centerY" id="uKn-on-B3U"/>
                                         <constraint firstItem="d5r-NU-2cn" firstAttribute="centerY" secondItem="v1f-Gl-Xxz" secondAttribute="centerY" id="wkq-kQ-ock"/>
