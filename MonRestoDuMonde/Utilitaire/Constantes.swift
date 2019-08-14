@@ -13,6 +13,7 @@ let GRIS_TRES_FONCE = UIColor(red: 30 / 255, green: 30 / 255, blue: 30 / 255, al
 let GRIS_TRES_CLAIR = UIColor(red: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1)
 
 let FONT_DE_BASE = UIFont(name: "Chalkduster", size: 20)
+let FONT_DE_BASE_SMALL = UIFont(name: "Chalkduster", size: 16)
 let FONT_TITRE = UIFont(name: "Chalkduster", size: 40)
 
 let ITALIE = "Italien"

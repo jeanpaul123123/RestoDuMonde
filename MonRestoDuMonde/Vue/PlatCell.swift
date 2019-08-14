@@ -15,6 +15,7 @@ class PlatCell: UITableViewCell {
 
     @IBOutlet weak var descDuPlat: UILabel!
     
+    
     var plat: Plat!
     
     func miseEnPlace(plat: Plat) {
@@ -28,8 +29,9 @@ class PlatCell: UITableViewCell {
         descDuPlat.text = self.plat.desc
         descDuPlat.textAlignment = .center
         descDuPlat.numberOfLines = 0
-        descDuPlat.font = FONT_DE_BASE
+        descDuPlat.font = FONT_DE_BASE_SMALL
         descDuPlat.textColor = GRIS_TRES_CLAIR
+        descDuPlat.adjustsFontSizeToFitWidth = true
     }
 
 }

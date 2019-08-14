@@ -181,7 +181,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlatCell" rowHeight="128" id="1B8-eA-vCu" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1B8-eA-vCu" id="v1f-Gl-Xxz" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1B8-eA-vCu" id="v1f-Gl-Xxz" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -192,12 +192,9 @@
                                                 <constraint firstAttribute="height" constant="100" id="IVu-P6-5FD"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d5r-NU-2cn">
-                                            <rect key="frame" x="143" y="14" width="241" height="100"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="241" id="sFR-Rx-8wu"/>
-                                                <constraint firstAttribute="height" constant="100" id="yvo-wK-onf"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="d6k-ev-ukb">
+                                            <rect key="frame" x="146" y="14" width="242" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -205,16 +202,13 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="d5r-NU-2cn" secondAttribute="trailing" constant="5" id="QT3-O9-vyw"/>
-                                        <constraint firstItem="d5r-NU-2cn" firstAttribute="leading" secondItem="qkJ-pd-QEw" secondAttribute="trailing" constant="5" id="ftg-jS-Z08"/>
                                         <constraint firstItem="qkJ-pd-QEw" firstAttribute="leading" secondItem="v1f-Gl-Xxz" secondAttribute="leading" constant="10" id="rvi-iH-sYp"/>
                                         <constraint firstItem="qkJ-pd-QEw" firstAttribute="centerY" secondItem="v1f-Gl-Xxz" secondAttribute="centerY" id="uKn-on-B3U"/>
-                                        <constraint firstItem="d5r-NU-2cn" firstAttribute="centerY" secondItem="v1f-Gl-Xxz" secondAttribute="centerY" id="wkq-kQ-ock"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="DescDuPlat" destination="d5r-NU-2cn" id="fOJ-hL-ben"/>
+                                    <outlet property="descDuPlat" destination="d6k-ev-ukb" id="9Uf-lD-1Rb"/>
                                     <outlet property="imageDuPlat" destination="qkJ-pd-QEw" id="NmX-5o-vQe"/>
                                 </connections>
                             </tableViewCell>
